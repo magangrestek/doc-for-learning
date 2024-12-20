@@ -1,2 +1,3 @@
 # doc-for-learning
-untuk belajar
+untuk belajar bisa diamalkan
+masih bahasa indo mohon maaf
