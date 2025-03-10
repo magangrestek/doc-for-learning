@@ -8,6 +8,100 @@ Tutorial ini akan memandu Anda dari awal pembuatan repository hingga proses push
 - Akun GitHub sudah dibuat
 - Git sudah dikonfigurasi dengan credential GitHub
 
+Berikut adalah tutorial instalasi Git yang dapat Anda tambahkan ke dokumen:
+
+---
+
+## Instalasi Git
+
+Sebelum menggunakan Git, Anda perlu menginstalnya di komputer Anda. Berikut langkah-langkah instalasi berdasarkan sistem operasi yang Anda gunakan.
+
+### 1. Instalasi Git di Windows
+1. **Download Git**  
+   - Kunjungi [halaman resmi Git](https://git-scm.com/downloads).
+   - Pilih versi untuk Windows dan unduh instalernya.
+
+2. **Jalankan Installer**  
+   - Buka file `.exe` yang telah diunduh.
+   - Ikuti langkah-langkah instalasi dengan pengaturan default atau sesuaikan sesuai kebutuhan:
+     - Pilih editor default (bisa menggunakan Nano, Vim, atau lainnya).
+     - Pilih opsi "Git from the command line and also from 3rd-party software".
+     - Pastikan opsi "Use Git Credential Manager" diaktifkan untuk menyimpan kredensial.
+
+3. **Verifikasi Instalasi**  
+   Setelah instalasi selesai, buka **Command Prompt** atau **Git Bash**, lalu jalankan:
+   ```bash
+   git --version
+   ```
+   Jika instalasi berhasil, versi Git akan ditampilkan.
+
+---
+
+### 2. Instalasi Git di macOS
+1. **Menggunakan Homebrew (Disarankan)**
+   - Jika Homebrew belum terinstal, instal terlebih dahulu dengan menjalankan perintah berikut di Terminal:
+     ```bash
+     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+     ```
+   - Setelah Homebrew terinstal, jalankan perintah berikut untuk menginstal Git:
+     ```bash
+     brew install git
+     ```
+
+2. **Menggunakan Git Installer**  
+   - Kunjungi [Git untuk macOS](https://git-scm.com/download/mac).
+   - Unduh dan jalankan instalernya.
+
+3. **Verifikasi Instalasi**  
+   Buka **Terminal** dan jalankan:
+   ```bash
+   git --version
+   ```
+   Jika instalasi berhasil, versi Git akan muncul.
+
+---
+
+### 3. Instalasi Git di Linux
+#### **Ubuntu/Debian**
+```bash
+sudo apt update
+sudo apt install git -y
+```
+
+#### **Fedora**
+```bash
+sudo dnf install git -y
+```
+
+#### **Arch Linux**
+```bash
+sudo pacman -S git
+```
+
+#### **Verifikasi Instalasi**
+Setelah proses instalasi selesai, jalankan:
+```bash
+git --version
+```
+Jika berhasil, versi Git akan ditampilkan.
+
+---
+
+### 4. Konfigurasi Git Setelah Instalasi
+Setelah Git terinstal, Anda perlu mengatur nama pengguna dan email yang akan digunakan dalam setiap commit.
+
+```bash
+git config --global user.name "Nama Anda"
+git config --global user.email "email@anda.com"
+```
+
+Anda dapat memeriksa konfigurasi yang telah diset dengan:
+```bash
+git config --list
+```
+
+Sekarang Git siap digunakan! 🎉
+
 ## Skenario 1: Memulai Proyek Baru
 
 ### 1. Membuat Repository Baru di GitHub
